@@ -32,7 +32,7 @@ const requestListener = (request, response) => {
             response.end(JSON.stringify({
                 message: 'Halo! Ini adalah halaman about',
             }));
-          // membuat body request
+          // membuat body request yang hanya dapat dijalankan menggunakan request curl -X POST -H "Content-Type: application/json" http://localhost:5000/about -d "{\"name\": \"Firman\"}"
         } else if(method === 'POST') {
                 let body = [];
         
